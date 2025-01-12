@@ -1,4 +1,5 @@
 # 고등학교 학업 지원 플랫폼
-웹사이트: https://sw-exam-web-platform.vercel.app/
+웹사이트: https://sw-edusuite.vercel.app/
 
-Last Modified: 2025. 01. 09
+version: 1.4.0
+Last Modified: 2025. 01. 12

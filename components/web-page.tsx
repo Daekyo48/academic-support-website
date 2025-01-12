@@ -26,7 +26,7 @@ type Errors = {
   written: { [key: string]: string };
 }
 
-export default function MobileWebPage() {
+export default function WebPage() {
   const [inputs, setInputs] = useState({
     category1: '',
     performance1: '', performance2: '', performance3: '',
@@ -424,20 +424,19 @@ export default function MobileWebPage() {
 
     const roundedTotalScore = Number(totalScore.toFixed(2));
     const roundedScore = Math.round(totalScore);
-    const grade = '정보없음';
 
-    setRawScoreMessage(`원점수: ${roundedScore}점 (${roundedTotalScore}점)\n등급: ${grade}`);
+    setRawScoreMessage(`원점수: ${roundedScore}점 (${roundedTotalScore}점)`);
     setErrors(prev => ({ ...prev, performance: {}, written: {} }));
   }, [selectedSubject, inputs, subjectsInfo]);
 
   const examTypes = ["1차 지필평가", "2차 지필평가"]
 
   const dates = [
-  { date: "12/9 (월)", subjects: ["(자습)", "영어Ⅱ[03]", "세계사[05]"] },
-  { date: "12/10 (화)", subjects: ["(자습)", "물리학Ⅰ[09]", "생활과 윤리[08]"] },
-  { date: "12/11 (수)", subjects: ["수학Ⅱ[02]", "한국지리[04]", "화학Ⅰ[10]"] },
-  { date: "12/12 (목)", subjects: ["독서[01]", "정치와 법[06]", "지구과학Ⅰ[12]"] },
-  { date: "12/13 (금)", subjects: ["일본어Ⅰ[17] / 중국어Ⅰ[18]", "사회·문화[07]", "생명과학Ⅰ[11]"] }
+  { date: "-", subjects: ["-", "-", "-"] },
+  { date: "-", subjects: ["-", "-", "-"] },
+  { date: "-", subjects: ["-", "-", "-"] },
+  { date: "-", subjects: ["-", "-", "-"] },
+  { date: "-", subjects: ["-", "-", "-"] }
 ];
 
   return (
@@ -452,7 +451,7 @@ export default function MobileWebPage() {
       ) : (
         <main className="w-full max-w-[500px] px-4 py-6 bg-white shadow-lg mx-auto">
           <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
-            지필평가 일정 플랫폼
+            학업 지원 플랫폼
           </h1>
           
           <div className="mb-6 text-center">
@@ -569,7 +568,7 @@ export default function MobileWebPage() {
               </div>
               
               <div className="border border-black rounded-lg p-3">
-                <h2 className="text-lg font-semibold mb-2">원점수/등급 계산기</h2>
+                <h2 className="text-lg font-semibold mb-2">원점수 계산기</h2>
                 <hr className="border-t border-gray-400 mb-2" />
                 <div className="space-y-3">
                   <div>
@@ -656,7 +655,7 @@ export default function MobileWebPage() {
           입력된 정보는 이외의 용도로 수집·이용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2025-01-09
+          2025-01-12, v1.4.0
         </p>
         </main>
       )}

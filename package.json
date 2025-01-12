@@ -1,7 +1,7 @@
 {
   "homepage": "https://Daekyo48.github.io/SW-EduSuitePlatform",
   "name": "sw-edusuite",
-  "version": "0.1.0",
+  "version": "1.4.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
