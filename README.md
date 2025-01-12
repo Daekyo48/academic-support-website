@@ -1,4 +1,4 @@
-## 지필평가 일정 플랫폼
-([sw-exam-web-platform.vercel.app](https://sw-exam-web-platform.vercel.app/))
+# 고등학교 다용도 플랫폼
+Web: https://sw-exam-web-platform.vercel.app/
 
-Last Modified: 2024. 12. 08
+Last Modified: 2024. 12. 25

@@ -56,9 +56,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.1, 4.1, 3.9, 4.5, 3.9, 4.2, 4.3, 3.9, 4.1, 4.1, 4.5, 4.2, 4.3, 4.2, 4.2, 4.5, 3.9, 3.9, 4.1, 3.9, 4.1, 4.5, 4.3, 4.3], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [25, 10, 5],
-      secondExamAnswers: "",
-      secondExamScores: [],
-      secondExamMaxScore: 0
+      secondExamAnswers: "315534312434152533143255",
+      secondExamScores: [4.3, 3.9, 4.2, 4.1, 4.5, 4.1, 4.5, 3.9, 4.1, 3.9, 4.2, 4.3, 4.1, 4.3, 4.5, 3.9, 4.2, 4.5, 4.3, 3.9, 4.1, 3.9, 4.1, 4.2],
+      secondExamMaxScore: 100
     },
     { 
       name: "수학Ⅱ", 
@@ -69,9 +69,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8], 
       firstExamMaxScore: 90, 
       performanceMaxScores: [13, 15, 12],
-      secondExamAnswers: "",
-      secondExamScores: [],
-      secondExamMaxScore: 0
+      secondExamAnswers: "431551123254523342",
+      secondExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8],
+      secondExamMaxScore: 90
     },
     { 
       name: "영어Ⅱ", 
@@ -82,9 +82,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.2, 4.4, 4.7, 4.1, 4.7, 4.1, 4.4, 5.1, 4.9, 4.9, 4.4, 4.4, 4.9, 4.4, 5.1, 4.1, 4.9, 4.4, 4.7, 4.1, 4.4, 4.7], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [25, 15], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "2155443542234112233513", 
+      secondExamScores: [4.1, 4.7, 4.4, 4.2, 4.1, 4.1, 4.1, 5.1, 4.7, 4.7, 4.4, 4.4, 4.4, 4.9, 4.9, 4.4, 4.4, 5.1, 4.9, 4.9, 4.4, 4.7], 
+      secondExamMaxScore: 100
     },
     { 
       name: "정치와 법", 
@@ -95,9 +95,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.7, 5.6, 4.5, 3.8, 4.3, 5.5, 5, 3.5, 4.2, 5.2, 4.1, 5.4, 5.1, 3.7, 4.8, 4.6, 3.9, 3.5, 5.3, 4.9, 4.4, 4], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "41525231144251523331", 
+      secondExamScores: [5.1, 5.6, 5, 4.8, 4.7, 4.3, 5.4, 4.9, 4.1, 4.2, 4.5, 4.4, 5.2, 4.6, 5.3, 5.5, 5.7, 5.9, 5.8, 5], 
+      secondExamMaxScore: 100
     },
     { 
       name: "사회·문화", 
@@ -108,9 +108,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.6, 4.5, 4.7, 5.6, 4.8, 4.9, 5.3, 4.4, 4.9, 5.1, 4.8, 5.5, 5.1, 5.2, 5.3, 4.9, 5.4, 4.7, 4.6, 5.7], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "12125334541433152152", 
+      secondExamScores: [4.6, 4.7, 4.9, 5.3, 4.6, 4.8, 5.3, 4.8, 4.9, 4.5, 5.4, 4.9, 5.1, 5.7, 5.2, 4.4, 5.5, 5.1, 5.6, 4.7], 
+      secondExamMaxScore: 100
     },
     { 
       name: "생활과 윤리", 
@@ -121,9 +121,9 @@ export default function MobileWebPage() {
       firstExamScores: [], 
       firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "5443412123325343531521351", 
+      secondExamScores: [3.2, 3.6, 3.2, 4, 3.6, 4.4, 4.6, 4, 4.2, 4.4, 4, 4.2, 3.8, 4.4, 4, 4.2, 4.2, 4.2, 4, 4.2, 3.6, 4, 4, 4, 4], 
+      secondExamMaxScore: 100
     },
     { 
       name: "화학Ⅰ", 
@@ -134,9 +134,9 @@ export default function MobileWebPage() {
       firstExamScores: [2.8, 4.5, 4.7, 4.4, 3.3, 3.4, 3.8, 3, 3.5, 3.9, 3.7, 4.6, 4, 4.9, 2.9, 3.1, 3.6, 4.1, 4.2, 4.3, 3.2, 4.8, 5, 5.1, 5.2], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "312511145234221355524345", 
+      secondExamScores: [3.2, 3.1, 3.3, 3.4, 3, 3.5, 3.6, 3.8, 4.5, 3.6, 4.7, 4, 4.1, 4.2, 4.4, 3.7, 4.6, 3.9, 4.9, 5.1, 5.5, 5.2, 5.4, 5.3], 
+      secondExamMaxScore: 100
     },
     { 
       name: "생명과학Ⅰ", 
@@ -147,9 +147,9 @@ export default function MobileWebPage() {
       firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], 
       firstExamMaxScore: 80, 
       performanceMaxScores: [20, 20, 10], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "21554431112235354432", 
+      secondExamScores: [4.3, 4.5, 4.4, 5.1, 5.3, 5.6, 5.6, 5.7, 4.5, 4.2, 4.6, 5, 5.3, 5.4, 4.3, 4.8, 5.5, 5.4, 5.2, 5.3], 
+      secondExamMaxScore: 100
     },
     { 
       name: "지구과학Ⅰ", 
@@ -160,9 +160,9 @@ export default function MobileWebPage() {
       firstExamScores: [3.7, 4.7, 4.3, 3.7, 3.7, 4.7, 4.3, 4.3, 4.7, 4.3, 4.3, 5, 3.7, 4.3, 4.7, 3.7, 4.3, 4.7, 4.3, 5, 4.3, 5, 4.3, 4.3, 5], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20, 10], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "15412343142113553523422", 
+      secondExamScores: [4.7, 4.7, 4.3, 4.3, 4.7, 3.7, 3.7, 3.7, 4.3, 4.3, 4.3, 3.7, 4.3, 4.3, 4.7, 5, 4.7, 3.7, 4.3, 5, 4.3, 4.3, 5], 
+      secondExamMaxScore: 100
     },
     { 
       name: "일본어Ⅰ", 
@@ -171,11 +171,11 @@ export default function MobileWebPage() {
       performanceAssessments: ["일상생활표현 말하기 (20점)", "일본문화 주제탐구 발표 (25점)", "일본어 문장쓰기 (15점)"], 
       firstExamAnswers: "", 
       firstExamScores: [], 
-      firstExamMaxScore: 100, 
+      firstExamMaxScore: 0, 
       performanceMaxScores: [20, 25, 15], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "4154434235145135324251523", 
+      secondExamScores: [4, 4, 3.8, 3.8, 3.5, 4, 3.9, 3.6, 4, 4.8, 3.6, 3.6, 3.8, 3.8, 4.4, 4.6, 3.4, 5, 5, 3.8, 4, 4.2, 3.8, 3.6, 4], 
+      secondExamMaxScore: 100
     },
     { 
       name: "중국어Ⅰ", 
@@ -184,19 +184,19 @@ export default function MobileWebPage() {
       performanceAssessments: ["음식 주문하기 (20점)", "듣고 반응하기 (20점)", "그림 보고 말하기 (20점)"], 
       firstExamAnswers: "", 
       firstExamScores: [], 
-      firstExamMaxScore: 100, 
+      firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0 
+      secondExamAnswers: "52515532434141141334352322", 
+      secondExamScores: [3.3, 3.7, 3.9, 3.5, 4.3, 3.6, 3.4, 4.4, 4.2, 3.6, 3.4, 3.8, 4.3, 3.8, 4.3, 3.9, 3.9, 4.1, 3.5, 3.7, 3.7, 3.8, 4.1, 4.4, 4.1, 3.3], 
+      secondExamMaxScore: 100 
     }
   ], []);
 
   useEffect(() => {
     const calculateDaysLeft = () => {
       const today = new Date()
-      const targetDate = new Date(2024, 11, 9)
-      const endDate = new Date(2024, 11, 13)
+      const targetDate = new Date(2025, 0, 8)
+      const endDate = new Date(2025, 0, 9)
       const timeDiff = targetDate.getTime() - today.getTime()
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
@@ -460,7 +460,7 @@ export default function MobileWebPage() {
               {daysLeft === 'Day' ? 'D-Day' : `D-${daysLeft}`}
             </div>
             <div className="text-sm text-gray-600">
-              (지필평가까지)
+              (종업식까지)
             </div>
           </div>
 
@@ -653,10 +653,10 @@ export default function MobileWebPage() {
             </div>
           )}
         <p className="text-xs text-gray-600 text-center mt-2 mb-1">
-          입력된 정보는 이외의 용도로 일절 사용되지 않습니다
+          입력된 정보는 이외의 용도로 수집·이용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-12-08
+          최종 수정일: 2024-12-25
         </p>
         </main>
       )}
