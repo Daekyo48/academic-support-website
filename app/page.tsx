@@ -1,5 +1,5 @@
-import MobileWebPage from "@/components/web-page"
+import WebPage from "@/components/web-page"
 
 export default function Page() {
-  return <MobileWebPage />
+  return <WebPage />
 }
