@@ -1,5 +1,5 @@
-# 고등학교 학업 지원 플랫폼
-웹사이트: https://sw-edusupport.vercel.app/
+# 고등학교 학업 보조 웹사이트
+웹사이트: https://sw-academic-support.vercel.app/
 
-Version: 1.4.3   
-Last Modified: 2025. 01. 14
+Version: 1.5.0   
+Last Modified: 2025. 02. 22
