@@ -211,10 +211,8 @@ export default function WebPage() {
   const calculateDaysLeft = useCallback(() => {
     const today = new Date()
     const targetDates = [
-      { date: new Date(2025, 2, 4), label: "개학식" },
-      { date: new Date(2025, 4, 5), label: "중간고사" },
-      { date: new Date(2025, 6, 15), label: "기말고사" },
-      { date: new Date(2025, 7, 20), label: "여름방학" },
+      { date: new Date(2025, 2, 4), label: "개학식"},
+      { date: new Date(2025, 10, 13), label: "대학수학능력시험"}
     ]
 
     return targetDates
@@ -526,7 +524,7 @@ export default function WebPage() {
                       ? `D-${daysLeft[currentDdayIndex]?.days}`
                       : "D-Day"}
                   </div>
-                  <div className="text-sm text-gray-600">({daysLeft[currentDdayIndex]?.label}까지)</div>
+                  <div className="text-sm text-gray-600">{daysLeft[currentDdayIndex]?.label}</div>
                 </div>
                 <button
                   onClick={() => setCurrentDdayIndex((prev) => (prev + 1) % daysLeft.length)}
