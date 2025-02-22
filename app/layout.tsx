@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "학업 지원 플랫폼",
-  description: "2학년 주요 일정 안내 및 점수 계산을 지원합니다.",
+  title: "학업 보조 웹사이트",
+  description: "3학년 주요 일정 안내 및 점수 계산을 지원합니다.",
 };
 
 export default function RootLayout({
