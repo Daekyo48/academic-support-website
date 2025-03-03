@@ -221,7 +221,7 @@ export default function WebPage() {
         const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
         return { days: daysLeft, label }
       })
-      .filter(({ days }) => days > 0)
+      .filter(({ days }) => days >= 0)
   }, [])
 
   useEffect(() => {
@@ -520,9 +520,7 @@ export default function WebPage() {
                 </button>
                 <div>
                   <div className="text-3xl font-bold text-primary">
-                    {typeof daysLeft[currentDdayIndex]?.days === "number"
-                      ? `D-${daysLeft[currentDdayIndex]?.days}`
-                      : "D-Day"}
+                    {daysLeft[currentDdayIndex]?.days === 0 ? "D-Day" : 'D-${daysLeft[currentDdayIndex]?.days)'}
                   </div>
                   <div className="text-sm text-gray-600">{daysLeft[currentDdayIndex]?.label}</div>
                 </div>
