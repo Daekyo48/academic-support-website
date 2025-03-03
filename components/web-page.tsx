@@ -215,13 +215,15 @@ export default function WebPage() {
       { date: new Date(2025, 10, 13), label: "대학수학능력시험"}
     ]
 
-    return targetDates
-      .map(({ date, label }) => {
-        const timeDiff = date.getTime() - today.getTime()
-        const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
-        return { days: daysLeft, label }
-      })
+    return (
+      targetDates
+        .map(({ date, label }) => {
+          const timeDiff = date.getTime() - today.getTime()
+          const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
+          return { days: daysLeft, label }
+        })
       .filter(({ days }) => days >= 0)
+    )
   }, [])
 
   useEffect(() => {
@@ -520,7 +522,7 @@ export default function WebPage() {
                 </button>
                 <div>
                   <div className="text-3xl font-bold text-primary">
-                    {daysLeft[currentDdayIndex]?.days === 0 ? "D-Day" : 'D-${daysLeft[currentDdayIndex]?.days)'}
+                    {daysLeft[currentDdayIndex]?.days === 0 ? "D-Day" : `D-${daysLeft[currentDdayIndex]?.days}`}
                   </div>
                   <div className="text-sm text-gray-600">{daysLeft[currentDdayIndex]?.label}</div>
                 </div>
@@ -746,7 +748,7 @@ export default function WebPage() {
           <p className="text-xs text-gray-600 text-center mt-2 mb-1">
             입력된 정보는 이외의 용도로 수집·이용되지 않습니다
           </p>
-          <p className="text-xs text-gray-600 text-center">v1.5.0, 2025-02-22</p>
+          <p className="text-xs text-gray-600 text-center">v1.5.2, 2025-03-04</p>
         </main>
       )}
     </div>
