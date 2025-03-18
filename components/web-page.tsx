@@ -211,7 +211,8 @@ export default function WebPage() {
   const calculateDaysLeft = useCallback(() => {
     const today = new Date()
     const targetDates = [
-      { date: new Date(2025, 2, 4), label: "개학식"},
+      { date: new Date(2025, 2, 26), label: "전국연합학력평가 (3월)"},
+      { date: new Date(2025, 3, 30), label: "1차 지필평가"},
       { date: new Date(2025, 10, 13), label: "대학수학능력시험"}
     ]
 
@@ -748,7 +749,7 @@ export default function WebPage() {
           <p className="text-xs text-gray-600 text-center mt-2 mb-1">
             입력된 정보는 이외의 용도로 수집·이용되지 않습니다
           </p>
-          <p className="text-xs text-gray-600 text-center">v1.5.2, 2025-03-04</p>
+          <p className="text-xs text-gray-600 text-center">v1.5.3, 2025-03-18</p>
         </main>
       )}
     </div>
