@@ -1,7 +1,7 @@
 {
   "homepage": "https://Daekyo48.github.io/academic-support-website",
   "name": "academic-support",
-  "version": "1.5.3",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",

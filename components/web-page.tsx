@@ -26,6 +26,12 @@ type Errors = {
   written: { [key: string]: string }
 }
 
+type TargetDateInfo = {
+  date: Date
+  label: string
+  dDayDuration?: number
+}
+
 export default function WebPage() {
   const [inputs, setInputs] = useState({
     category1: "",
@@ -41,7 +47,7 @@ export default function WebPage() {
     written: {},
   })
   const [isTableExpanded, setIsTableExpanded] = useState(false)
-  const [daysLeft, setDaysLeft] = useState<Array<{ days: number | string; label: string }>>([])
+  const [daysLeft, setDaysLeft] = useState<Array<{ days: number; label: string; isDDay: boolean }>>([])
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
   const [selectedExam, setSelectedExam] = useState<string | null>(null)
   const [scoreMessage, setScoreMessage] = useState<string | null>(null)
@@ -56,7 +62,10 @@ export default function WebPage() {
         name: "독서",
         ratio: "지필평가 60% | 수행평가 40%",
         hasFirstExam: true,
-        performanceAssessments: ["독서과정 (25점)", "독후활동(논술) (10점)", "독후활동(구술) (5점)"],
+        performanceAssessments: [
+          "독서과정 (25점)",
+          "독후활동(논술) (10점)",
+          "독후활동(구술) (5점)"],
         firstExamAnswers: "532441422315351441135223",
         firstExamScores: [4.1, 4.1, 3.9, 4.5, 3.9, 4.2, 4.3, 3.9, 4.1, 4.1, 4.5, 4.2, 4.3, 4.2, 4.2, 4.5, 3.9, 3.9, 4.1, 3.9, 4.1, 4.5, 4.3, 4.3],
         firstExamMaxScore: 100,
@@ -86,7 +95,10 @@ export default function WebPage() {
         name: "영어Ⅱ",
         ratio: "지필평가 60% | 수행평가 40%",
         hasFirstExam: true,
-        performanceAssessments: ["나의 행복 글쓰기 (25점)", "공동체의 행복 증진 방안 말하기 (15점)"],
+        performanceAssessments: [
+          "나의 행복 글쓰기 (25점)",
+          "공동체의 행복 증진 방안 말하기 (15점)"
+        ],
         firstExamAnswers: "5441432421135525235231",
         firstExamScores: [4.2, 4.4, 4.7, 4.1, 4.7, 4.1, 4.4, 5.1, 4.9, 4.9, 4.4, 4.4, 4.9, 4.4, 5.1, 4.1, 4.9, 4.4, 4.7, 4.1, 4.4, 4.7],
         firstExamMaxScore: 100,
@@ -99,7 +111,10 @@ export default function WebPage() {
         name: "정치와 법",
         ratio: "지필평가 60% | 수행평가 40%",
         hasFirstExam: true,
-        performanceAssessments: ["정치 참여 방안 제시하기 (20점)", "국제 문제 해결할 수 있는 국제 기구 만들기 (20점)"],
+        performanceAssessments: [
+          "정치 참여 방안 제시하기 (20점)",
+          "국제 문제 해결할 수 있는 국제 기구 만들기 (20점)"
+        ],
         firstExamAnswers: "1422532235343352314154",
         firstExamScores: [4.7, 5.6, 4.5, 3.8, 4.3, 5.5, 5, 3.5, 4.2, 5.2, 4.1, 5.4, 5.1, 3.7, 4.8, 4.6, 3.9, 3.5, 5.3, 4.9, 4.4, 4],
         firstExamMaxScore: 100,
@@ -112,7 +127,10 @@ export default function WebPage() {
         name: "사회·문화",
         ratio: "지필평가 60% | 수행평가 40%",
         hasFirstExam: true,
-        performanceAssessments: ["사회 변동 가상 신문 제작 (20점)", "사회 불평등 논술 (20점)"],
+        performanceAssessments: [
+          "사회 변동 가상 신문 제작 (20점)",
+          "사회 불평등 논술 (20점)"
+        ],
         firstExamAnswers: "43134121532435542425",
         firstExamScores: [4.6, 4.5, 4.7, 5.6, 4.8, 4.9, 5.3, 4.4, 4.9, 5.1, 4.8, 5.5, 5.1, 5.2, 5.3, 4.9, 5.4, 4.7, 4.6, 5.7],
         firstExamMaxScore: 100,
@@ -125,7 +143,11 @@ export default function WebPage() {
         name: "생활과 윤리",
         ratio: "지필평가 40% | 수행평가 60%",
         hasFirstExam: false,
-        performanceAssessments: ["혐오 표현 규제 (20점)", "환경 윤리 논술^? (20점)", "카드 뉴스 제작 (20점)"],
+        performanceAssessments: [
+          "혐오 표현 규제 (20점)",
+          "환경 윤리 논술^? (20점)",
+          "카드 뉴스 제작 (20점)"
+        ],
         firstExamAnswers: "",
         firstExamScores: [],
         firstExamMaxScore: 0,
@@ -155,7 +177,11 @@ export default function WebPage() {
         name: "생명과학Ⅰ",
         ratio: "지필평가 50% | 수행평가 50%",
         hasFirstExam: true,
-        performanceAssessments: ["유전 해석하기 (20점)", "군집 분석 (20점)", "포트폴리오 (10점)"],
+        performanceAssessments: [
+          "유전 해석하기 (20점)",
+          "군집 분석 (20점)",
+          "포트폴리오 (10점)"
+        ],
         firstExamAnswers: "115423532442135354",
         firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5],
         firstExamMaxScore: 80,
@@ -168,7 +194,11 @@ export default function WebPage() {
         name: "지구과학Ⅰ",
         ratio: "지필평가 50% | 수행평가 50%",
         hasFirstExam: true,
-        performanceAssessments: ["태풍의 일생 논술^? (20점)", "지구과학 탐구 보고서 (20점)", "포트폴리오 (10점)"],
+        performanceAssessments: [
+          "태풍의 일생 논술^? (20점)",
+          "지구과학 탐구 보고서 (20점)",
+          "포트폴리오 (10점)"
+        ],
         firstExamAnswers: "23332352451114411422534",
         firstExamScores: [3.7, 4.7, 4.3, 3.7, 3.7, 4.7, 4.3, 4.3, 4.7, 4.3, 4.3, 5, 3.7, 4.3, 4.7, 3.7, 4.3, 4.7, 4.3, 5, 4.3, 5, 4.3, 4.3, 5],
         firstExamMaxScore: 100,
@@ -181,7 +211,11 @@ export default function WebPage() {
         name: "일본어Ⅰ",
         ratio: "지필평가 40% | 수행평가 60%",
         hasFirstExam: false,
-        performanceAssessments: ["일상생활표현 말하기 (20점)", "일본문화 주제탐구 발표 (25점)", "일본어 문장쓰기 (15점)"],
+        performanceAssessments: [
+          "일상생활표현 말하기 (20점)",
+          "일본문화 주제탐구 발표 (25점)",
+          "일본어 문장쓰기 (15점)"
+        ],
         firstExamAnswers: "",
         firstExamScores: [],
         firstExamMaxScore: 0,
@@ -194,7 +228,11 @@ export default function WebPage() {
         name: "중국어Ⅰ",
         ratio: "지필평가 40% | 수행평가 60%",
         hasFirstExam: false,
-        performanceAssessments: ["음식 주문하기 (20점)", "듣고 반응하기 (20점)", "그림 보고 말하기 (20점)"],
+        performanceAssessments: [
+          "음식 주문하기 (20점)",
+          "듣고 반응하기 (20점)",
+          "그림 보고 말하기 (20점)"
+        ],
         firstExamAnswers: "",
         firstExamScores: [],
         firstExamMaxScore: 0,
@@ -210,21 +248,28 @@ export default function WebPage() {
   // 디데이 계산 함수
   const calculateDaysLeft = useCallback(() => {
     const today = new Date()
-    const targetDates = [
-      { date: new Date(2025, 2, 26), label: "전국연합학력평가 (3월)"},
-      { date: new Date(2025, 3, 30), label: "1차 지필평가"},
-      { date: new Date(2025, 10, 13), label: "대학수학능력시험"}
+    const targetDates: TargetDateInfo[] = [
+      { date: new Date(2025, 3, 30), label: "1차 지필평가", dDayDuration: 3 },
+      { date: new Date(2025, 4, 8), label: "전국연합학력평가", dDayDuration: 1 },
+      { date: new Date(2025, 4, 23), label: "현장체험학습", dDayDuration: 1 },
+      { date: new Date(2025, 5, 3), label: "대수능모의평가", dDayDuration: 1 },
+      { date: new Date(2025, 10, 13), label: "대학수학능력시험", dDayDuration: 1 },
     ]
 
-    return (
-      targetDates
-        .map(({ date, label }) => {
-          const timeDiff = date.getTime() - today.getTime()
-          const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
-          return { days: daysLeft, label }
-        })
-      .filter(({ days }) => days >= 0)
-    )
+    return targetDates
+      .map(({ date, label, dDayDuration = 1 }) => {
+        const timeDiff = date.getTime() - today.getTime()
+        const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
+
+        const isDDay = daysLeft <= 0 && daysLeft > -dDayDuration
+  
+        return {
+          days: daysLeft,
+          label,
+          isDDay,
+        }
+      })
+      .filter(({ days, isDDay }) => days >= 0 || isDDay)
   }, [])
 
   useEffect(() => {
@@ -481,11 +526,9 @@ export default function WebPage() {
   const examTypes = ["1차 지필평가", "2차 지필평가"]
 
   const dates = [
-    { date: "-", subjects: ["-", "-", "-"] },
-    { date: "-", subjects: ["-", "-", "-"] },
-    { date: "-", subjects: ["-", "-", "-"] },
-    { date: "-", subjects: ["-", "-", "-"] },
-    { date: "-", subjects: ["-", "-", "-"] },
+    { date: "4/30 (수)", subjects: ["확률과 통계", "윤리와 사상", "-"] },
+    { date: "5/1 (목)", subjects: ["영어독해와 작문", "세계지리", "미적분"] },
+    { date: "5/2 (금)", subjects: ["언어와 매체 / 화법과 작문", "경제", "동아시아사"] }
   ]
 
   return (
@@ -523,7 +566,11 @@ export default function WebPage() {
                 </button>
                 <div>
                   <div className="text-3xl font-bold text-primary">
-                    {daysLeft[currentDdayIndex]?.days === 0 ? "D-Day" : `D-${daysLeft[currentDdayIndex]?.days}`}
+                    {daysLeft[currentDdayIndex]?.isDDay
+                      ? "D-Day"
+                      : daysLeft[currentDdayIndex]?.days > 0
+                        ? `D-${daysLeft[currentDdayIndex]?.days}`
+                        : `D+${Math.abs(daysLeft[currentDdayIndex]?.days)}`}
                   </div>
                   <div className="text-sm text-gray-600">{daysLeft[currentDdayIndex]?.label}</div>
                 </div>
@@ -606,7 +653,7 @@ export default function WebPage() {
                   </p>
                 </>
               ) : (
-                <p className="text-center">과목을 선택해주세요</p>
+                <p className="text-center">정보공시 이후 업데이트 예정</p>
               )}
             </div>
           </div>
@@ -689,9 +736,6 @@ export default function WebPage() {
                             </div>
                           ),
                       )}
-                    <p className="text-xs text-gray-500 mt-2">
-                      <sup>?</sup> 정확하지 않은 평가명
-                    </p>
                   </div>
                   <div>
                     <h3 className="text-md font-semibold mb-2">지필평가 영역</h3>
@@ -749,7 +793,8 @@ export default function WebPage() {
           <p className="text-xs text-gray-600 text-center mt-2 mb-1">
             입력된 정보는 이외의 용도로 수집·이용되지 않습니다
           </p>
-          <p className="text-xs text-gray-600 text-center">v1.5.3, 2025-03-18</p>
+          <p className="text-xs text-gray-600 text-center">v1.6.0, 2025-04-10
+          </p>
         </main>
       )}
     </div>
