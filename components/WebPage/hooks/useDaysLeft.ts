@@ -13,7 +13,7 @@ export const useDaysLeft = () => {
       { date: new Date(2025, 3, 30), label: "1차 지필평가", dDayDuration: 3 },
       { date: new Date(2025, 4, 8), label: "전국연합학력평가", dDayDuration: 1 },
       { date: new Date(2025, 4, 23), label: "현장체험학습", dDayDuration: 1 },
-      { date: new Date(2025, 5, 3), label: "대수능모의평가", dDayDuration: 1 },
+      { date: new Date(2025, 5, 4), label: "대수능모의평가", dDayDuration: 1 },
       { date: new Date(2025, 10, 13), label: "대학수학능력시험", dDayDuration: 1 },
     ]
 

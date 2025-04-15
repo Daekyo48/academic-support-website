@@ -123,10 +123,10 @@ export default function WebPage() {
             </div>
           )}
 
-          <p className="text-xs text-gray-600 text-center mt-2 mb-1">
-            입력된 정보는 이외의 용도로 수집·이용되지 않습니다
+          <p className="text-xs text-gray-600 text-center mt-2 mb-1 leading-relaxed">
+            입력된 정보는 이외의 용도로 수집·이용되지 않습니다<br />
+            v1.6.1, 2025-04-15
           </p>
-          <p className="text-xs text-gray-600 text-center">v1.6.0, 2025-04-10</p>
         </main>
       )}
     </div>
