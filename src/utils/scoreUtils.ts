@@ -118,24 +118,29 @@ export const calculateRawScore = (subjectsInfo: SubjectInfo[], selectedSubject: 
   }
 
   switch (subject.name) {
-    case "독서":
-    case "수학Ⅱ":
-    case "영어Ⅱ":
-    case "정치와 법":
-    case "사회·문화":
+    case "화법과 작문":
+    case "언어와 매체":
+    case "영어독해와 작문":
+    case "확률과 통계":
+    case "미적분":
+    case "동아시아사":
+    case "경제":
       totalScore += (written1 * 3) / 10 + (written2 * 3) / 10
       break
-    case "생활과 윤리":
-    case "일본어Ⅰ":
-    case "중국어Ⅰ":
+    case "경제 수학":
+    case "기하":
+    case "물리학Ⅱ":
+    case "화학Ⅱ":
+    case "생명과학Ⅱ":
+    case "지구과학Ⅱ":
+    case "생활과 과학":
       totalScore += (written2 * 4) / 10
       break
-    case "화학Ⅰ":
-      totalScore += (written1 * 2) / 10 + (written2 * 2) / 10
-      break
-    case "생명과학Ⅰ":
-    case "지구과학Ⅰ":
+    case "세계지리":
       totalScore += (written1 * 25) / 100 + (written2 * 25) / 100
+      break
+    case "윤리와 사상":
+      totalScore += (written1 * 275) / 1000 + (written2 * 275) / 1000
       break
   }
 

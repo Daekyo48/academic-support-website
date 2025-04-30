@@ -1,4 +1,4 @@
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/src/components/ui/select"
 import { SubjectInfo } from '../types'
 
 type SubjectSelectorProps = {
@@ -27,7 +27,7 @@ export const SubjectSelector = ({ subjectsInfo, selectedSubject, handleSubjectCh
           반영비율: {subjectsInfo.find((subject) => subject.name === selectedSubject)?.ratio}
         </p>
       ) : (
-        <p className="text-center">정보공시 이후 업데이트 예정</p>
+        <p className="text-center">과목을 선택해주세요</p>
       )}
     </div>
   </div>

@@ -1,4 +1,4 @@
-import WebPage from "@/components/WebPage/WebPage"
+import WebPage from "@/src/WebPage"
 
 export default function Page() {
   return <WebPage />
