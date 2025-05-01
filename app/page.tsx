@@ -1,5 +1,5 @@
-import WebPage from "@/src/WebPage"
+import MainPage from "@/src/MainPage"
 
-export default function Page() {
-  return <WebPage />
+export default function RootPage() {
+  return <MainPage />
 }
