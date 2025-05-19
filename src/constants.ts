@@ -272,9 +272,11 @@ export const subjectsInfo: SubjectInfo[] = [
 ];
 
 export const dates = [
-  { date: "4/30 (수)", subjects: ["확률과 통계", "윤리와 사상", "-"] },
-  { date: "5/1 (목)", subjects: ["영어독해와 작문", "세계지리", "미적분"] },
-  { date: "5/2 (금)", subjects: ["언어와 매체 / 화법과 작문", "경제", "동아시아사"] },
+  { date: "6/30 (월)", subjects: ["-", "-", "-"] },
+  { date: "7/1 (화)", subjects: ["-", "-", "-"] },
+  { date: "7/2 (수)", subjects: ["-", "-", "-"] },
+  { date: "7/3 (목)", subjects: ["-", "-", "-"] },
+  { date: "7/4 (금)", subjects: ["-", "-", "-"] },
 ];
 
 export const examTypes = ["1차 지필평가", "2차 지필평가"];
