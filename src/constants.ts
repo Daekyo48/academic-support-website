@@ -272,11 +272,11 @@ export const subjectsInfo: SubjectInfo[] = [
 ];
 
 export const dates = [
-  { date: "6/30 (월)", subjects: ["-", "-", "-"] },
-  { date: "7/1 (화)", subjects: ["-", "-", "-"] },
-  { date: "7/2 (수)", subjects: ["-", "-", "-"] },
-  { date: "7/3 (목)", subjects: ["-", "-", "-"] },
-  { date: "7/4 (금)", subjects: ["-", "-", "-"] },
+  { date: "6/30 (월)", subjects: ["언어와 매체 / 화법과 작문", "미적분", "생활과 과학"] },
+  { date: "7/1 (화)", subjects: ["확률과 통계", "생명과학II", "-"] },
+  { date: "7/2 (수)", subjects: ["윤리와 사상", "물리학II", "동아시아사"] },
+  { date: "7/3 (목)", subjects: ["경제", "화학II", "지구과학II"] },
+  { date: "7/4 (금)", subjects: ["영어독해와 작문", "경제수학 / 기하", "세계지리"] },
 ];
 
 export const examTypes = ["1차 지필평가", "2차 지필평가"];

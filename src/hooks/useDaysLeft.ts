@@ -10,10 +10,10 @@ export const useDaysLeft = () => {
   const calculateDaysLeft = useCallback(() => {
     const today = new Date()
     const targetDates: TargetDateInfo[] = [
-      { date: new Date(2025, 4, 23), label: "현장체험학습", dDayDuration: 1 },
-      { date: new Date(2025, 5, 4), label: "대수능모의평가", dDayDuration: 1 },
       { date: new Date(2025, 5, 30), label: "2차 지필평가", dDayDuration: 5 },
       { date: new Date(2025, 6, 18), label: "여름방학식", dDayDuration: 1 },
+      { date: new Date(2025, 8, 3), label: "대수능모의평가", dDayDuration: 1 },
+      { date: new Date(2025, 8, 26), label: "3학년 지필평가", dDayDuration: 7 },
       { date: new Date(2025, 10, 13), label: "대학수학능력시험", dDayDuration: 1 },
     ]
 
