@@ -14,8 +14,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "3324223443522411545314155",
     firstExamScores: [3.2, 4.8, 3.2, 4.4, 4.0, 3.6, 4.0, 4.8, 4.0, 4.0, 4.8, 3.2, 4.8, 3.6, 3.6, 3.6, 3.6, 4.4, 3.2, 3.2, 4.0, 4.4, 4.4, 4.8, 4.4],
     firstExamMaxScore: 100,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "5213542324121433215435434",
+    secondExamScores: [3.6, 3.8, 3.6, 4.2, 4.4, 3.5, 3.6, 4, 4.4, 4.2, 3.5, 4.4, 4.2, 4.1, 4.6, 4.0, 3.5, 3.8, 3.8, 3.8, 4.4, 4.0, 4.6, 4.0, 4.0],
     secondExamMaxScore: 100,
   },
   {
@@ -31,8 +31,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "554115234454331125243321",
     firstExamScores: [3.8, 3.8, 3.8, 3.9, 3.9, 3.9, 3.9, 3.9, 4.1, 4.1, 4.2, 4.2, 4.2, 4.2, 4.2, 4.2, 4.4, 4.4, 4.4, 4.5, 4.5, 4.5, 4.5, 4.5],
     firstExamMaxScore: 100,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "215411342425433152534512",
+    secondExamScores: [3.9, 3.8, 3.9, 4.1, 4.4, 3.8, 4.2, 3.6, 4.2, 4.2, 3.6, 3.6, 4.8, 3.8, 3.9, 4.1, 4.2, 4.4, 4.4, 4.5, 4.8, 4.8, 4.5, 4.5],
     secondExamMaxScore: 100,
   },
   {
@@ -81,8 +81,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "412555231314343252",
     firstExamScores: [4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8],
     firstExamMaxScore: 90,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "223451434352113425",
+    secondExamScores: [4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8],
     secondExamMaxScore: 90,
   },
   {
@@ -265,8 +265,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "",
     firstExamScores: [],
     firstExamMaxScore: 0,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "3345234541122532113512345",
+    secondExamScores: [3.7, 4.1, 4.1, 4.3, 4.0, 4.0, 4.1, 4.0, 3.7, 4.3, 4.0, 3.7, 3.9, 3.9, 4.3, 4.1, 4.3, 3.9, 4.3, 4.0, 4.1, 3.7, 3.9, 3.7, 3.9],
     secondExamMaxScore: 100,
   },
 ];
