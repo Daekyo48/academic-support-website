@@ -64,8 +64,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "121434214315453523",
     firstExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5.0, 5.0, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8],
     firstExamMaxScore: 90,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "351113442344153522",
+    secondExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5.0, 5.0, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8],
     secondExamMaxScore: 90,
   },
   {
@@ -231,8 +231,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "",
     firstExamScores: [],
     firstExamMaxScore: 0,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "1243352444531252113325142",
+    secondExamScores: [3.6, 3.6, 3.8, 3.6, 3.6, 3.8, 3.8, 3.8, 3.6, 4.0, 4.2, 4.0, 3.8, 4.0, 4.4, 4.2, 4.4, 4.0, 4.2, 4.0, 4.4, 4.4, 4.2, 4.2, 4.4],
     secondExamMaxScore: 100,
   },
   {
