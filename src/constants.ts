@@ -47,8 +47,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "44242314511221534513325534",
     firstExamScores: [3.4, 3.4, 3.9, 3.9, 4.0, 3.9, 3.7, 4.2, 4.2, 3.9, 3.5, 3.7, 4.0, 4.0, 4.0, 3.9, 3.9, 3.9, 3.9, 3.5, 4.0, 3.7, 4.0, 3.9, 3.9, 3.7],
     firstExamMaxScore: 100,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "524333545124414322145351",
+    secondExamScores: [3.8, 3.8, 3.8, 4.2, 4.2, 4.3, 4.3, 4.5, 4.2, 4.3, 4.3, 4.5, 4.2, 4.2, 4.2, 4.2, 4.0, 3.8, 4.5, 4.2, 4.3, 4.0, 4.2, 4.0],
     secondExamMaxScore: 100,
   },
   {
@@ -98,8 +98,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "",
     firstExamScores: [],
     firstExamMaxScore: 0,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "33452142435412255311",
+    secondExamScores: [4.0, 5.3, 5.5, 4.7, 4.5, 4.5, 5.0, 4.5, 5.0, 5.0, 4.7, 6.0, 4.7, 5.0, 5.2, 4.3, 5.0, 5.0, 6.0, 6.1],
     secondExamMaxScore: 100,
   },
   {
@@ -115,8 +115,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "",
     firstExamScores: [],
     firstExamMaxScore: 0,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "54553422231431235412",
+    secondExamScores: [4.4, 4.4, 4.5, 4.5, 4.6, 4.6, 4.8, 4.8, 4.9, 5.0, 5.0, 5.0, 5.1, 5.1, 5.4, 5.4, 5.5, 5.5, 5.7, 5.8],
     secondExamMaxScore: 100,
   },
   {
@@ -164,8 +164,8 @@ export const subjectsInfo: SubjectInfo[] = [
     firstExamAnswers: "3412544523134213254351",
     firstExamScores: [4.2, 4.3, 4.2, 4.8, 4.6, 4.4, 4.1, 4.6, 4.9, 4.6, 4.7, 4.9, 4.4, 4.7, 4.5, 4.7, 4.5, 4.8, 4.8, 4.3, 4.9, 4.1],
     firstExamMaxScore: 100,
-    secondExamAnswers: "",
-    secondExamScores: [],
+    secondExamAnswers: "134351151422434513255235",
+    secondExamScores: [3.8, 4.2, 4.0, 3.8, 3.8, 4.4, 4.0, 4.2, 4.0, 4.0, 4.4, 3.8, 4.2, 4.4, 4.6, 4.6, 4.0, 4.4, 3.8, 4.2, 4.2, 4.6, 4.0, 4.6],
     secondExamMaxScore: 100,
   },
   {
